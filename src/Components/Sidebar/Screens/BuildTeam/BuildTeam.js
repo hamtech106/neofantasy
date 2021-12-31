@@ -16,10 +16,10 @@ const BuildTeam = () => {
                     <div className="d-flex align-items-center justify-content-between">
                         <div >
                             <p className='silent-text text-start'>Prize Pool</p>
-                            <h5 className='text-dark'>1,00,000 N</h5>
+                            <h5 className='text-dark'>1,00,000 <img src="./neocointag.png" alt="N"/></h5>
                         </div>
                         <div className="px-2 rounded" style={{ background: "#ffbd29" }}>
-                            <p className='fw-600 text-dark'>70 N</p>
+                            <p className='fw-600 text-dark'>70 <img src="./neocointag.png" alt="N"/></p>
                         </div>
                     </div>
                     <div class="progress my-2">
@@ -29,7 +29,7 @@ const BuildTeam = () => {
                         <div className="d-flex align-items-center">
                             <div className="me-3 prize">
                                 <p className='silent-text text-start'>1st Prize</p>
-                                <p className='fw-600'>N 10,000</p>
+                                <p className='fw-600'><img src="./neocointag.png" alt="N"/> 10,000</p>
                             </div>
                             <div className="win-rate">
                                 <p className='silent-text text-center'>Win Rate</p>

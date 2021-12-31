@@ -14,7 +14,7 @@ import MyGames from './Pages/MainScreens/MyGames/MyGames';
 function App() {
   return (
     <>
-      <MyGames></MyGames>
+      <FantasyHome></FantasyHome>
     </>
   );
 }

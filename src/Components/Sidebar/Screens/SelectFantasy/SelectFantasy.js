@@ -8,7 +8,10 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import './SelectFantasy.css'
-import vk from '../../../../assests/Player2.png'
+import kl from '../../../../assests/playerIcon/klrahultag.png'
+import ss from '../../../../assests/playerIcon/sanjutag.png'
+import rp from '../../../../assests/playerIcon/rishabtag.png'
+import ws from '../../../../assests/playerIcon/Wriddhimantag.png'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -58,22 +61,22 @@ const SelectFantasy = () => {
 
     const wk = [
         {
-            img: vk,
+            img: kl,
             name: "KL Rahul",
             points: "9.0",
         },
         {
-            img: vk,
+            img: ss,
             name: "Sanju Samson",
             points: "9.0",
         },
         {
-            img: vk,
+            img: rp,
             name: "Rishab Pant",
             points: "9.0",
         },
         {
-            img: vk,
+            img: ws,
             name: "Wriddhiman Shah",
             points: "9.0",
         },
@@ -81,36 +84,36 @@ const SelectFantasy = () => {
 
     const bat = [
         {
-            img: vk,
+            img: kl,
             name: "KL Rahul",
             points: "9.0",
         },
         {
-            img: vk,
+            img: ss,
             name: "Sanju Samson",
             points: "9.0",
         },
         {
-            img: vk,
+            img: rp,
             name: "Rishab Pant",
             points: "9.0",
         },
     ]
     const ar = [
         {
-            img: vk,
+            img: kl,
             name: "KL Rahul",
             points: "9.0",
         },
         {
-            img: vk,
+            img: ss,
             name: "Sanju Samson",
             points: "9.0",
         },
     ]
     const bowl = [
         {
-            img: vk,
+            img: kl,
             name: "KL Rahul",
             points: "9.0",
         },
