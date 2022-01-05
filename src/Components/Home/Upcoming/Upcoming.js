@@ -1,7 +1,10 @@
 import React from 'react'
 import './Upcoming.css'
+// Flags from assets 
 import Team1Flag from '../../../assests/Flags/Srilanka.png'
 import Team2Flag from '../../../assests/Flags/India.png'
+
+// Upcoming Tab [Home => Cricket]
 
 const Upcoming = () => {
     return (

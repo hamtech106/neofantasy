@@ -46,7 +46,7 @@ const Sidebar = () => {
             <div class="offcanvas offcanvas-end sidebar d-flex justify-content-center" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header d-flex align-items-center justify-content-between">
                     <div className='d-flex align-items-center'>
-                        <img src={Arrow} onClick={handleBack} hidden={activeStep === 0} style={{ cursor: "pointer" }} />
+                        <img src={Arrow} onClick={handleBack} hidden={activeStep === 0} style={{ cursor: "pointer" }} alt='Back' />
                         <img src={Arrow} alt="" type="button" data-bs-dismiss="offcanvas" aria-label="Close" hidden={activeStep !== 0} />
                         <p className='fw-600 ms-3'>India Tour of Srilanka</p>
                     </div>
@@ -89,7 +89,9 @@ const Sidebar = () => {
                                     Name your team for better access next time</p>
                                 <input type="text" placeholder='Enter Team Name' className='w-100' />
                                 <div className="d-flex flex-column">
-                                    <button type="button" class="mt-4 mb-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Save Team Name</button>
+                                    <button type="button" class="mt-4 mb-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" onClick={() => {
+                                        setActiveStep(0);
+                                    }}>Save Team Name</button>
                                     <button type="button" className="bg-light text-dark" data-bs-dismiss="modal" >No</button>
                                 </div>
                             </div>
@@ -101,34 +103,15 @@ const Sidebar = () => {
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content modal2">
                         <div class="modal-body">
-                            <div class="modal-body text-center">
+                            <div class="modal-body text-center" >
                                 <img src={Success} alt="" />
                                 <h4 className='fw-600 mt-2' > @username’s <br /> Team 1
                                     Was Created Successfully</h4>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            {/* Modal */}
-            {/* <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content modal1">
-                        <div class="modal-body text-center">
-                            <h4 className='fw-600 mb-3'>Save Team Name</h4>
-                            <p>Now that you have created your fantasy 11
-                                Name your team for better access next time</p>
-                            <input type="text" placeholder='Enter Team Name' className='w-100' />
-                            <div className="d-flex flex-column">
-                                <button type="button" class="mt-4 mb-2">Save Team Name</button>
-                                <button type="button" className="bg-light text-dark" data-bs-dismiss="modal">No</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </>
     )
 }

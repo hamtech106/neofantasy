@@ -1,5 +1,8 @@
+/* Importing fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* Common CSS for Both the Navbars  */
 
 nav {
   background: rgba(255, 255, 255, 0.6);

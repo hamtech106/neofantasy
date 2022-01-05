@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Logo from '../../../assests/Logo.png'
-import { NavLink } from 'react-router-dom'
-import { Construction } from '@mui/icons-material'
+// import { NavLink } from 'react-router-dom'
+// import { Construction } from '@mui/icons-material'
+
+// Navbar for the Other Pages 
 
 export default class Navbar2 extends Component {
     render() {

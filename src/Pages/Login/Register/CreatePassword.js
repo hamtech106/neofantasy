@@ -12,7 +12,7 @@ export default class CreatePassword extends Component {
 
                         <div className="row">
                             <div className="col-8 d-none d-lg-block">
-                                <img src={cover} alt="Cards" srcset="" />
+                                <img src={cover} alt="Cards" />
                             </div>
                             <div className="col-sm-12 col-lg-4">
                                 <h3>Create a secure password</h3>

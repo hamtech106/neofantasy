@@ -1,5 +1,6 @@
-import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './index.css'
+// Pages
 import LoginPage from './Pages/Login/Login/LoginPage';
 import LoginPassword from './Pages/Login/Login/LoginPassword';
 import Signup from './Pages/Login/Register/Signup'
@@ -14,7 +15,7 @@ import MyGames from './Pages/MainScreens/MyGames/MyGames';
 function App() {
   return (
     <>
-      <FantasyHome></FantasyHome>
+      <MyGames></MyGames>
     </>
   );
 }

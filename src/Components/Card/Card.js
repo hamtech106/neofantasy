@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { } from './card.css'
 
+// Tab cards  [Fantasy Home | My Games]
+
 export default class Card extends Component {
     render() {
         return (

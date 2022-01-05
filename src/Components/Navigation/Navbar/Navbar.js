@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { } from './Navbar.css'
 import Logo from '../../../assests/Logo.png'
 
+// Navbar for the Login and Register Page 
+
 export default class Navbar extends Component {
     render() {
         return (

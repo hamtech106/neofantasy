@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+// My games -> Live Games Card
+
 export default class Livecard extends Component {
     render() {
         return (

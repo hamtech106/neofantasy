@@ -1,0 +1,18 @@
+.selectFanatay .player-card {
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.selectFanatay .player-card .points p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.selectFanatay .player-card.selected {
+  background: rgba(15, 40, 101, 0.6);
+}
+
+.selectFanatay .player-card.selected p {
+  color: #fff;
+  transition: 0s !important;
+}

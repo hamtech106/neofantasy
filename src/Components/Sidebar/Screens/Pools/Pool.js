@@ -64,20 +64,20 @@ const Pool = () => {
                         <div className="d-flex align-items-center justify-content-between">
                             <div >
                                 <p className='silent-text text-start'>Prize Pool</p>
-                                <h5 className='text-dark'>{prizePool} <img src="./neocointag.png" alt="N"/></h5>
+                                <h5 className='text-dark'>{prizePool} <img src="./neocointag.png" alt="N" /></h5>
                             </div>
                             <div className="px-2 rounded" style={{ background: "#ffbd29" }}>
-                                <p className='fw-600 text-dark'>{coins} <img src="./neocointag.png" alt="N"/></p>
+                                <p className='fw-600 text-dark'>{coins} <img src="./neocointag.png" alt="N" /></p>
                             </div>
                         </div>
-                        <div class="progress my-2">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: `${winRate}%` }}></div>
+                        <div className="progress my-2">
+                            <div className="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: `${winRate}%` }}></div>
                         </div>
                         <div className="d-flex align-items-center justify-content-between">
                             <div className="d-flex align-items-center">
                                 <div className="me-3 prize">
                                     <p className='silent-text text-start'>1st Prize</p>
-                                    <p className='fw-600'><img src="./neocointag.png" alt="N"/> {firstPrize}</p>
+                                    <p className='fw-600'><img src="./neocointag.png" alt="N" /> {firstPrize}</p>
                                 </div>
                                 <div className="win-rate">
                                     <p className='silent-text text-center'>Win Rate</p>
@@ -102,10 +102,10 @@ const Pool = () => {
                         <div className="d-flex align-items-center justify-content-between">
                             <div >
                                 <p className='silent-text text-start'>Prize Pool</p>
-                                <h5 className='text-dark'>{prizePool} <img src="./neocointag.png" alt="N"/></h5>
+                                <h5 className='text-dark'>{prizePool} <img src="./neocointag.png" alt="N" /></h5>
                             </div>
                             <div className="px-2 rounded" style={{ background: "#ffbd29" }}>
-                                <p className='fw-600 text-dark'>{coins} <img src="./neocointag.png" alt="N"/></p>
+                                <p className='fw-600 text-dark'>{coins} <img src="./neocointag.png" alt="N" /></p>
                             </div>
                         </div>
                         <div class="progress my-2">
@@ -115,7 +115,7 @@ const Pool = () => {
                             <div className="d-flex align-items-center">
                                 <div className="me-3 prize">
                                     <p className='silent-text text-start'>1st Prize</p>
-                                    <p className='fw-600'><img src="./neocointag.png" alt="N"/> {firstPrize}</p>
+                                    <p className='fw-600'><img src="./neocointag.png" alt="N" /> {firstPrize}</p>
                                 </div>
                                 <div className="win-rate">
                                     <p className='silent-text text-center'>Win Rate</p>

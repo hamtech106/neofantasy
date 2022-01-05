@@ -14,7 +14,7 @@ const LoginPage = () => {
                 <div className="login-container container w-75 mx-auto ">
                     <div className="row">
                         <div className="col-8 d-none d-lg-block">
-                            <img src={cover} alt="Cards" srcset="" />
+                            <img src={cover} alt="Cards" />
                         </div>
                         <div className="col-sm-12 col-lg-4">
                             <h1>Login <br /> To Continue</h1>

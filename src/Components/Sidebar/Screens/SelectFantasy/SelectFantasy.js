@@ -12,6 +12,7 @@ import kl from '../../../../assests/playerIcon/klrahultag.png'
 import ss from '../../../../assests/playerIcon/sanjutag.png'
 import rp from '../../../../assests/playerIcon/rishabtag.png'
 import ws from '../../../../assests/playerIcon/Wriddhimantag.png'
+import PlayerCard from './PlayerCards/PlayerCards'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -156,80 +157,40 @@ const SelectFantasy = () => {
                     >
                         <TabPanel value={value} index={0} dir={theme.direction}>
                             <div className="mt-3 container-fluid p-0">
-                                {wk.map((curElem) => {
+                                {wk.map((curElem, index) => {
                                     const { name, points, img } = curElem;
                                     return (
-                                        <div className="player-card d-flex align-items-center justify-content-between p-3">
-                                            <div className="d-flex align-items-center">
-                                                <div style={{ width: "40px", height: "40px", backgroundColor: "#fff", borderRadius: "50%", overflow: "hidden" }}>
-                                                    <img src={img} alt="" className='img-fluid' />
-                                                </div>
-                                                <p className='ms-3 me-2 fw-600'>{name}</p>
-                                            </div>
-                                            <div style={{ backgroundColor: "rgba(15, 40, 101, 1)", borderRadius: "8px" }} className='px-2 py-1'>
-                                                <p className='text-light cursor-pointer'>{points} +</p>
-                                            </div>
-                                        </div>
+                                        <PlayerCard name={name} points={points} img={img} index={index} />
                                     )
                                 })}
                             </div>
                         </TabPanel>
                         <TabPanel value={value} index={1} dir={theme.direction}>
                             <div className="mt-3 container-fluid p-0">
-                                {bat.map((curElem) => {
+                                {bat.map((curElem, index) => {
                                     const { name, points, img } = curElem;
                                     return (
-                                        <div className="player-card d-flex align-items-center justify-content-between p-3">
-                                            <div className="d-flex align-items-center">
-                                                <div style={{ width: "40px", height: "40px", backgroundColor: "#fff", borderRadius: "50%", overflow: "hidden" }}>
-                                                    <img src={img} alt="" className='img-fluid' />
-                                                </div>
-                                                <p className='ms-3 me-2 fw-600'>{name}</p>
-                                            </div>
-                                            <div style={{ backgroundColor: "rgba(15, 40, 101, 1)", borderRadius: "8px" }} className='px-2 py-1'>
-                                                <p className='text-light'>{points} +</p>
-                                            </div>
-                                        </div>
+                                        <PlayerCard name={name} points={points} img={img} index={index} />
                                     )
                                 })}
                             </div>
                         </TabPanel>
                         <TabPanel value={value} index={2} dir={theme.direction}>
                             <div className="mt-3 container-fluid p-0">
-                                {ar.map((curElem) => {
+                                {ar.map((curElem, index) => {
                                     const { name, points, img } = curElem;
                                     return (
-                                        <div className="player-card d-flex align-items-center justify-content-between p-3">
-                                            <div className="d-flex align-items-center">
-                                                <div style={{ width: "40px", height: "40px", backgroundColor: "#fff", borderRadius: "50%", overflow: "hidden" }}>
-                                                    <img src={img} alt="" className='img-fluid' />
-                                                </div>
-                                                <p className='ms-3 me-2 fw-600'>{name}</p>
-                                            </div>
-                                            <div style={{ backgroundColor: "rgba(15, 40, 101, 1)", borderRadius: "8px" }} className='px-2 py-1'>
-                                                <p className='text-light'>{points} +</p>
-                                            </div>
-                                        </div>
+                                        <PlayerCard name={name} points={points} img={img} index={index} />
                                     )
                                 })}
                             </div>
                         </TabPanel>
                         <TabPanel value={value} index={3} dir={theme.direction}>
                             <div className="mt-3 container-fluid p-0">
-                                {bowl.map((curElem) => {
+                                {bowl.map((curElem, index) => {
                                     const { name, points, img } = curElem;
                                     return (
-                                        <div className="player-card d-flex align-items-center justify-content-between p-3">
-                                            <div className="d-flex align-items-center">
-                                                <div style={{ width: "40px", height: "40px", backgroundColor: "#fff", borderRadius: "50%", overflow: "hidden" }}>
-                                                    <img src={img} alt="" className='img-fluid' />
-                                                </div>
-                                                <p className='ms-3 me-2 fw-600'>{name}</p>
-                                            </div>
-                                            <div style={{ backgroundColor: "rgba(15, 40, 101, 1)", borderRadius: "8px" }} className='px-2 py-1'>
-                                                <p className='text-light'>{points} +</p>
-                                            </div>
-                                        </div>
+                                        <PlayerCard name={name} points={points} img={img} index={index} />
                                     )
                                 })}
                             </div>
