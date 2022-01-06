@@ -3,6 +3,7 @@ import Navbar from '../../../Components/Navigation/Navbar/Navbar'
 import cover from '../../../assests/Login/FormCards.png'
 import OR from '../../../assests/Login/OR.png'
 import Google from '../../../assests/Login/Google icon.png'
+import { NavLink } from 'react-router-dom'
 
 export default class LoginPassword extends Component {
     render() {
@@ -22,7 +23,9 @@ export default class LoginPassword extends Component {
                                 <form className='mt-4'>
                                     <input type="password" placeholder='Your Password Here' className='mb-3' />
 
-                                    <button type='submit'>Continue</button>
+                                    <NavLink to='/home'>
+                                        <button className='w-100' type='submit'>Continue</button>
+                                    </NavLink>
 
                                     <p className='silent-text mt-2'>
                                         By Proceeding, I agree to <u>T&C</u> & <u>Privacy Policy</u>

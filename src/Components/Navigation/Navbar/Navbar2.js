@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Logo from '../../../assests/Logo.png'
-// import { NavLink } from 'react-router-dom'
-// import { Construction } from '@mui/icons-material'
+import { NavLink } from 'react-router-dom'
 
 // Navbar for the Other Pages 
 
@@ -19,28 +18,30 @@ export default class Navbar2 extends Component {
             <>
                 <nav className='container-fluid d-none d-lg-flex align-items-center justify-content-between fixed-top'>
                     <div className="nav-left ">
-                        <img src={Logo} alt="Logo" className='img-fluid' />
-                        <h3>neofantasy</h3>
+                        <NavLink to="/home" className='p-0 d-flex'>
+                            <img src={Logo} alt="Logo" className='img-fluid' />
+                            <h3>neofantasy</h3>
+                        </NavLink>
 
                         <ul className="list-unstyled d-flex align-items-center justify-content-center">
                             <li className='active' id="1" onClick={() => activeTrue(1)}>
-                                <a>Fantasy Home</a>
+                                <NavLink to='/home'>Fantasy Home</NavLink>
                             </li>
                             <li id="2" onClick={() => activeTrue(2)}>
-                                <a>My Games</a>
+                                <NavLink to='/mygames'>My Games</NavLink>
                             </li>
                             <li id="3" onClick={() => activeTrue(3)}>
-                                <a>Reward</a>
+                                <NavLink to='/'>Reward</NavLink>
                             </li>
                             <li id="4" onClick={() => activeTrue(4)}>
-                                <a>Wallet</a>
+                                <NavLink to='/password'>Wallet</NavLink>
                             </li>
                         </ul>
 
                     </div>
                     <div className="nav-right">
-                        <a href="#"> <div className="nav-btn"> 10,000</div> </a>
-                        <a href="#"> <div className="nav-btn"> @bhojaksmith </div> </a>
+                        <NavLink to="/login"> <div className="nav-btn"> 10,000</div> </NavLink>
+                        <NavLink to="/signup"> <div className="nav-btn"> @bhojaksmith </div> </NavLink>
                     </div>
                 </nav>
             </>

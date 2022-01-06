@@ -59,6 +59,15 @@ nav ul li {
   cursor: pointer;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
 nav ul li.active {
   opacity: 1;
 }

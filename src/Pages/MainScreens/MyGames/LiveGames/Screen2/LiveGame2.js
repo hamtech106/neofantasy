@@ -4,6 +4,7 @@ import PakistanFlag from '../../../../../assests/PakistanFlag.png'
 import IndiaFlag from '../../../../../assests/IndiaFlag.png'
 import Navbar from '../../../../../Components/Navigation/Navbar/Navbar2'
 import Leaderboard from '../../../../../Components/MyGames/Leaderboard'
+import { NavLink } from 'react-router-dom'
 
 const LiveGame2 = () => {
     const runs = [0, 2, 1, 2, 5, 6, "W", 4, "WD"]
@@ -16,20 +17,22 @@ const LiveGame2 = () => {
                         <div className="container-fluid">
                             <div className="row row1">
                                 <div className="col-12 card w-100 flex-md-row align-items-center align-items-md-start justify-content-evenly p-3">
-                                    <div className=" d-flex flex-column">
-                                        <div className="d-flex flex-column flex-lg-row">
-                                            <div className="">
-                                                <img src={PakistanFlag} alt="" className='img-fluid' />
-                                                <h4 className='text-center mt-3'>Pakistan</h4>
-                                                <p className='silent-text'>Won the toss & Decided to bat First</p>
-                                            </div>
-                                            <div className="scores text-center text-lg-start">
-                                                <h1 className='fw-bold'>139/6</h1>
-                                                <h3 className='fw-bold'>19.4/20</h3>
-                                                <h5 className='fw-bold'>RR: 7.06</h5>
+                                    <NavLink to='/livegame-1'>
+                                        <div className=" d-flex flex-column">
+                                            <div className="d-flex flex-column flex-lg-row">
+                                                <div className="">
+                                                    <img src={PakistanFlag} alt="" className='img-fluid' />
+                                                    <h4 className='text-center mt-3'>Pakistan</h4>
+                                                    <p className='silent-text'>Won the toss & Decided to bat First</p>
+                                                </div>
+                                                <div className="scores text-center text-lg-start">
+                                                    <h1 className='fw-bold'>139/6</h1>
+                                                    <h3 className='fw-bold'>19.4/20</h3>
+                                                    <h5 className='fw-bold'>RR: 7.06</h5>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </NavLink>
                                     <div className="mt-3 mt-md-0">
                                         <img src={IndiaFlag} alt="" className='img-fluid' />
                                         <h4 className='text-center mt-3'>India</h4>

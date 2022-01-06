@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from '../../../Components/Navigation/Navbar/Navbar'
 import cover from '../../../assests/Login/FormCards.png'
+import { NavLink } from 'react-router-dom'
 
 export default class CreatePassword extends Component {
     render() {
@@ -26,18 +27,14 @@ export default class CreatePassword extends Component {
                                         Passwords Must Contain a special
                                         character, a number and a Capital Letter</p>
 
-                                    <button type='submit'>Sign up</button>
+                                    <NavLink to="/home">
+                                        <button type='submit' className='w-100'>Sign up</button>
+                                    </NavLink>
 
                                     <p className='silent-text mt-2'>
                                         By Proceeding, I agree to <u>T&C</u> & <u>Privacy Policy</u>
                                     </p>
-
-                                    {/* <img src="./assests/Login/OR.png" alt="OR" className=' mt-3 img-fluid' /> */}
                                 </form>
-                                {/* <button type='submit' className='mt-3 google-btn'>
-                                    <img src="./assests/Login/Google icon.png" alt="google" className='me-2 img-fluid' />
-                                    Continue with Google
-                                </button> */}
                             </div>
 
                         </div>

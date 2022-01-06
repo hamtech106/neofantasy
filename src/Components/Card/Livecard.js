@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { NavLink } from 'react-router-dom'
 // My games -> Live Games Card
 
 export default class Livecard extends Component {
@@ -43,7 +43,9 @@ export default class Livecard extends Component {
                                 </div>
                             </div>
                         </div>
-                        <button >Join Now</button>
+                        <NavLink to='/livegame-1'>
+                            <button className='w-100'>Join Now</button>
+                        </NavLink>
                     </div>
                 </div>
             </>

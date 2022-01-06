@@ -4,6 +4,7 @@ import './LoginPage.css'
 import cover from '../../../assests/Login/FormCards.png'
 import OR from '../../../assests/Login/OR.png'
 import Google from '../../../assests/Login/Google icon.png'
+import { NavLink } from 'react-router-dom'
 
 
 const LoginPage = () => {
@@ -20,7 +21,9 @@ const LoginPage = () => {
                             <h1>Login <br /> To Continue</h1>
                             <form className='mt-4'>
                                 <input type="text" placeholder='Your Email or Username Here' className='mb-3' />
-                                <button>Continue</button>
+                                <NavLink to="/password" >
+                                    <button className='w-100'>Continue</button>
+                                </NavLink>
                                 <img src={OR} alt="OR" className=' mt-3 img-fluid' />
                             </form>
                             <button type='submit' className='mt-3 google-btn'>

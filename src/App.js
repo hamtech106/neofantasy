@@ -15,7 +15,21 @@ import MyGames from './Pages/MainScreens/MyGames/MyGames';
 function App() {
   return (
     <>
-      <MyGames></MyGames>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route index element={<LoginPage />} />
+            <Route path='login' element={<LoginPage />} />
+            <Route path="password" element={<LoginPassword />} />
+            <Route path="signup" element={<Signup />} />
+            <Route path="create-password" element={<CreatePassword />} />
+            <Route path="home" element={<FantasyHome />} />
+            <Route path="mygames" element={<MyGames />} />
+            <Route path="livegame-1" element={<LiveGame1 />} />
+            <Route path="livegame-2" element={<LiveGame2 />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

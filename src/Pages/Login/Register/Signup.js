@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from '../../../Components/Navigation/Navbar/Navbar'
 import cover from '../../../assests/Login/FormCards.png'
+import { NavLink } from 'react-router-dom'
 
 export default class Signup extends Component {
     render() {
@@ -24,8 +25,9 @@ export default class Signup extends Component {
                                     <input type="tel" placeholder='Enter Phone Number' className='mb-3' />
 
                                     <input type="text" placeholder='Entyer Date of Birth (DD/MM/YY)' className='mb-3' />
-
-                                    <button type='submit'>Continue</button>
+                                    <NavLink to='/create-password' >
+                                        <button type='submit' className='w-100'>Continue</button>
+                                    </NavLink>
                                 </form>
 
                             </div>
